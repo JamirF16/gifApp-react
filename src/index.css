@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: rgb(41, 41, 41);
+}
+
+input {
+  background: inherit;
+  width: 200px;
+  height: 30px;
+  margin: 20px 45px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  &:focus {
+    border-bottom: 1px solid purple;
+    transition: .5s;
+  }
+}
+
+button {
+  padding: 8px;
+  color: #fff;
+  background: purple;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  &:hover{
+    background: rgba(128, 0, 128, 0.322);
+    transition: .3s;
+  }
+
+}
+
+.category__name {
+  margin-left: 50px;
+  font-size: 2rem;
+}
+
+.url {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.836);
+  color: #fff;
+  &:hover{
+    transform: scale(1.1);
+    transition: .5s;
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px 20px 0 0;
 }
